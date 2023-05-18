@@ -1,0 +1,29 @@
+/* Mobile: with < 740px */
+@media only screen and (max-width: 46.1875em){
+	
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+
+}
+/* Mobile and Tablet: width < 1024px */
+@media only screen and (max-width: 63.9375em){
+    .header-nav {
+        display: none;
+    }
+    .section {
+        padding-top: 0;
+    }
+}
+/* PC: width >= 1024px */
+@media only screen and (min-width: 64em){
+    .respon-nav {
+        display: none;
+    }
+    .respon-bar-icon{
+        display: none;
+    }
+    .respon-overlay{
+        display: none;
+    }
+}
