@@ -94,29 +94,66 @@
                     </ul>
                 </nav>
                 <nav class="respon-bar-icon">
-                    <i class="fa-solid fa-bars" style="color: white; font-size: 20px;"></i>
+                    <i class="fa-solid fa-bars open-btn" style="color: white; font-size: 20px;"></i>
                 </nav>
             </div>
         </header>
+        <!-- respon nav bar -->
         <div class="respon-nav">
-            <i class="fa-solid fa-bars respon-bar-icon" style="color: white; font-size: 20px;"></i>
+            <i class="fa-solid fa-bars respon-bar-icon close-btn" style="color: white; font-size: 20px;"></i>
             <ul>
-                <li class="nav__item"><a href="" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Shop</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Search</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Account</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Your Cart</a></li>
+                <li class="nav__item">
+                    <i class="fa-solid fa-home"></i>
+                    <a href="" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <a href="" class="nav__link">Shop</a>
+                </li>
+                <li class="nav__item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="" class="nav__link">Search</a>
+                </li>
+                <li class="nav__item">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="" class="nav__link">Account</a>
+                </li>
+                <li class="nav__item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="" class="nav__link">Your Cart</a>
+                </li>
             </ul>
         </div>
         <div class="respon-overlay"></div>
         <!-- slider -->
         <div class="slider-container">
-            <div class="slider">
-                <i class="fa-solid fa-chevron-left left-icon slider-icon"></i>
-                <i class="fa-solid fa-chevron-right right-icon slider-icon"></i>
+            <div class="slider-main">
+                <div class="slider__item">
+                    <img class="slider__img" src="/assets/images/banner-1.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="slider__img" src="/assets/images/banner-2.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="slider__img" src="/assets/images/banner-3.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="slider__img" src="/assets/images/banner-4.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="slider__img" src="/assets/images/banner-5.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="slider__img" src="/assets/images/banner-6.jpg" alt="">
+                </div>
             </div>
-            <a href="#product" class="slider-btn"><i class="fa solid fa-chevron-down"></i></a>
+            <i class="fa-solid fa-chevron-right prev-btn slider-btn"></i>
+            <i class="fa-solid fa-chevron-right next-btn slider-btn"></i>
+            <a href="#product" class="scroll-down-btn">
+                <i class="fa-solid chevron-down"></i>
+            </a>
         </div>
+        <!-- product section -->
         <section id="product" class="section product-section">
             <h1 class="section-title">OUR KEYBOARD PRODUCTS</h1>
             <div class="tab-container">
@@ -125,6 +162,518 @@
                     <div class="tab__item">KEYCAPS</div>
                     <div class="tab__line"></div>
                 </div>
+                <div class="panels">
+                    <!-- kits panel -->
+                    <div class="panel panel__item active">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="" class="product__banner">
+                                    <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                    <div class="overlay">
+                                        <a href="" class="btn label">In stock</a>
+                                        <a href="" class="btn buy__btn">Buy now</a>
+                                    </div>
+                                </a>
+                                <a class="product__detail">
+                                    <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                    <h4 class="product__price">$749.25</h4>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="" class="product__banner">
+                                    <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                    <div class="overlay">
+                                        <a href="" class="btn label">In stock</a>
+                                        <a href="" class="btn buy__btn">Buy now</a>
+                                    </div>
+                                </a>
+                                <a class="product__detail">
+                                    <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                    <h4 class="product__price">$749.25</h4>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="" class="product__banner">
+                                    <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                    <div class="overlay">
+                                        <a href="" class="btn label">In stock</a>
+                                        <a href="" class="btn buy__btn">Buy now</a>
+                                    </div>
+                                </a>
+                                <a class="product__detail">
+                                    <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                    <h4 class="product__price">$749.25</h4>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="" class="product__banner">
+                                    <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                    <div class="overlay">
+                                        <a href="" class="btn label">In stock</a>
+                                        <a href="" class="btn buy__btn">Buy now</a>
+                                    </div>
+                                </a>
+                                <a class="product__detail">
+                                    <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                    <h4 class="product__price">$749.25</h4>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="more-products">
+                            <div class="product-wrapper">
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#product" class="btn more-btn">See more</a>
+                    </div>
+                    <!-- switches panel -->
+                    <div class="panel panel__item">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="" class="product__banner">
+                                    <img src="/assets/images/Gateron-Phantom-Red-Switch-Set_360x.webp" alt="">
+                                    <div class="overlay">
+                                        <a href="" class="btn label">In stock</a>
+                                        <a href="" class="btn buy__btn">Buy now</a>
+                                    </div>
+                                </a>
+                                <a class="product__detail">
+                                    <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                    <h4 class="product__price">$749.25</h4>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="" class="product__banner">
+                                    <img src="/assets/images/Gateron-Phantom-Red-Switch-Set_360x.webp" alt="">
+                                    <div class="overlay">
+                                        <a href="" class="btn label">In stock</a>
+                                        <a href="" class="btn buy__btn">Buy now</a>
+                                    </div>
+                                </a>
+                                <a class="product__detail">
+                                    <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                    <h4 class="product__price">$749.25</h4>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="" class="product__banner">
+                                    <img src="/assets/images/Gateron-Phantom-Red-Switch-Set_360x.webp" alt="">
+                                    <div class="overlay">
+                                        <a href="" class="btn label">In stock</a>
+                                        <a href="" class="btn buy__btn">Buy now</a>
+                                    </div>
+                                </a>
+                                <a class="product__detail">
+                                    <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                    <h4 class="product__price">$749.25</h4>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="" class="product__banner">
+                                    <img src="/assets/images/Gateron-Phantom-Red-Switch-Set_360x.webp" alt="">
+                                    <div class="overlay">
+                                        <a href="" class="btn label">In stock</a>
+                                        <a href="" class="btn buy__btn">Buy now</a>
+                                    </div>
+                                </a>
+                                <a class="product__detail">
+                                    <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                    <h4 class="product__price">$749.25</h4>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="more-products">
+                            <div class="product-wrapper">
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="" class="product__banner">
+                                        <img src="/assets/images/ACR-Top-75-Kit-360x320.jpg" alt="">
+                                        <div class="overlay">
+                                            <a href="" class="btn label">In stock</a>
+                                            <a href="" class="btn buy__btn">Buy now</a>
+                                        </div>
+                                    </a>
+                                    <a class="product__detail">
+                                        <h2 class="product__name">AKKO ACR TOP 75 Kit</h2>
+                                        <h4 class="product__price">$749.25</h4>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#product" class="btn more-btn">See more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="product" class="section product-section">
+            <h1 class="section-title">MORE OF OUR PRODUCTS</h1>
+            <div class="tab-container">
+                <div class="flex tabs">
+                    <div class="tab__item active">SWITCHES</div>
+                    <div class="tab__item">PRE-BUILT</div>
+                    <div class="tab__line"></div>   
+                </div>  
                 <div class="panels">
                     <!-- kits panel -->
                     <div class="panel panel__item active">
