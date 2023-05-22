@@ -71,7 +71,7 @@ const app = {
                 
                 !btn.getAttribute('class').includes('active') ?
                     btn.innerText = 'See more' 
-                    :btn.innerText = 'Hide away' 
+                    :btn.innerText = 'Hide away'
             }
         });
         // open respon nav
