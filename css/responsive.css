@@ -1,5 +1,16 @@
 /* Mobile: with < 740px */
 @media only screen and (max-width: 46.1875em){
+    /* header respon */
+    .header {
+        padding-inline: 40px !important;
+    }
+    .logo {
+        font-size: 22px !important;
+    }
+    /* respon nav */
+    .respon-nav {
+        padding: 30px 35px !important;
+    }
     /* slider respon */
     .slider-container {
         height: 350px;
@@ -15,6 +26,19 @@
     .wait-list__content .content__top .content__detail {
         width: 100%;
     }
+    /* section respon */
+    .section{
+        padding: 60px 20px !important;
+    }
+    /* pre-built respon  */
+    .pre-built-product .product__banner .product__overlay .overlay-btn{
+        min-width: 250px;
+        text-align: center;
+    }
+    /* wait list respon  */
+    .wait-list-form {
+        margin-top: 0 !important;
+    }
     /* footer respon  */
     .footer__top {
         flex-wrap: wrap !important;
@@ -23,6 +47,26 @@
     }
     .follow-us-content {
         text-align: left;
+    }
+    /* banner overlay - product page respon */
+    .banner__overlay .overlay__title {
+        font-size: 16px !important;
+    }
+
+    .banner__overlay .overlay__subtitle {
+        font-size: 8px !important;
+    }
+    /* product nav - product page respon */
+    .product__nav ul {
+        gap: 12px;
+    }
+    .product__nav .nav__link {
+        font-size: 8px !important;
+    }
+    /*product title - product page respon*/
+    .product__section .section__title {
+        font-size: 22px;
+        text-align: center;
     }
 }
 /* Tablet: width >= 740px and width < 1024px */
@@ -39,7 +83,7 @@
         display: none;
     }
     .respon-bar-icon {
-        display: block;
+        display: flex !important;
     }
     /* product section respon  */
     .section-product{
@@ -65,6 +109,10 @@
     .wait-list__content .wait-list-form {
         flex-grow: 1;
         margin-top: 45px;
+    }
+    /* product page - product nav respon */
+    .product__nav .nav__link {
+        font-size: 12px;
     }
 }
 /* PC: width >= 1024px */

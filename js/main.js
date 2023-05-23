@@ -2,8 +2,8 @@
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 // searchbar
-const searchBar = $('.bar')
-const searchIcon = $('.magni-icon')
+const searchBar = $$('.bar')
+const searchIcon = $$('.magni-icon')
 // tab
 // const tabItems = $$('.tab__item')
 const tabLines = $$('.tab__line')
@@ -33,9 +33,11 @@ for (let i = 0; i < renderActiveTabs.length ; i++) {
 const app = {
     eventHandler () {
         // expand search bar
-        searchIcon.addEventListener('click' , () => {
-            searchIcon.parentElement.classList.toggle('active')
-        })
+        searchIcon.forEach((icon , index) => {
+            icon.addEventListener('click', () => {
+                icon.parentElement.classList.toggle('active')
+            })
+        });
         // product tabs
         const tabContainers = $$('.tab-container')
         tabContainers.forEach(item => {
@@ -74,9 +76,37 @@ const app = {
                     :btn.innerText = 'Hide away'
             }
         });
+        // handle on scroll header
+        const container = $('.container') 
+        if (container) {
+            container.onmouseenter = () => {
+                container.classList.add('active')
+                if (container.getAttribute('class').includes('active')) {
+                    const header = $('.container.active > .header')
+                    const heroBanner = $('.hero-banner')
+                    if (heroBanner) {
+                        document.onscroll = () => {
+                            const scrollY = document.scrollY || document.documentElement.scrollTop
+                            if (scrollY != 0) {
+                                header.style.transform = 'translateY(-100%)'
+                            } else {
+                                header.style.transform = 'translateY(0)'
+                            }
+                            if (scrollY >= heroBanner.offsetHeight - header.offsetHeight) {
+                                header.style.transform = 'translateY(0)'
+                                header.style.background = 'linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 100%)'
+                            } else {
+                                header.style.background = 'none'
+                            }
+                        }
+                    }
+                }
+            }
+        }
         // open respon nav
         openNavBtn.onclick = () => {
             responNav.style.transform = 'translateX(0)'
+            responNav.style.opacity = 1
             responOverlay.style.opacity = 1
             responOverlay.style.visibility = 'visible'
         }
@@ -87,60 +117,62 @@ const app = {
             this.closeResponThings()
         }
         // slider
-        let itemWidth = sliderMain.offsetWidth
-        var firstItem = sliderMain.firstElementChild.cloneNode(true);
-        var lastItem = sliderMain.lastElementChild.cloneNode(true);
+        if (sliderMain) {
+            let itemWidth = sliderMain.offsetWidth
+            var firstItem = sliderMain.firstElementChild.cloneNode(true);
+            var lastItem = sliderMain.lastElementChild.cloneNode(true);
 
-        // Append the cloned items to the beginning and end of the carousel
-        sliderMain.appendChild(firstItem);
-        sliderMain.insertBefore(lastItem, sliderMain.firstElementChild);
+            // Append the cloned items to the beginning and end of the carousel
+            sliderMain.appendChild(firstItem);
+            sliderMain.insertBefore(lastItem, sliderMain.firstElementChild);
 
-        // Initialize the current position of the carousel
-        var currentPosition = -itemWidth;
-        sliderMain.style.transform = `translateX(${currentPosition}px)`;
-        nextBtn.onclick = () => {
-            // Move to the next item
-            currentPosition -= itemWidth;
-            // Restrict the position to prevent scrolling beyond the last item
-            currentPosition = Math.max(currentPosition, -itemWidth * (sliderMain.children.length - 1));
-            // Apply the new position to the items container
+            // Initialize the current position of the carousel
+            var currentPosition = -itemWidth;
             sliderMain.style.transform = `translateX(${currentPosition}px)`;
-            // Check if we've reached the cloned last item
-            if (currentPosition === -(itemWidth * (sliderMain.children.length - 1))) {
-                // Move to the actual first item
-                currentPosition = -itemWidth;
-                // Apply the new position instantly without animation
-                sliderMain.style.transition = 'none';
+            nextBtn.onclick = () => {
+                // Move to the next item
+                currentPosition -= itemWidth;
+                // Restrict the position to prevent scrolling beyond the last item
+                currentPosition = Math.max(currentPosition, -itemWidth * (sliderMain.children.length - 1));
+                // Apply the new position to the items container
+                sliderMain.style.transform = `translateX(${currentPosition}px)`;
+                // Check if we've reached the cloned last item
+                if (currentPosition === -(itemWidth * (sliderMain.children.length - 1))) {
+                    // Move to the actual first item
+                    currentPosition = -itemWidth;
+                    // Apply the new position instantly without animation
+                    sliderMain.style.transition = 'none';
+                    sliderMain.style.transform = `translateX(${currentPosition}px)`;
+
+                    // After a short delay, reset the transition to re-enable animation
+                    setTimeout(function () {
+                        sliderMain.style.transition = '';
+                    }, 10);
+                }
+            }
+            prevBtn.addEventListener('click', () => {
+                // Move to the previous item
+                currentPosition += itemWidth;
+                // Restrict the position to prevent scrolling beyond the first item
+                currentPosition = Math.min(currentPosition, 0);
+                // Apply the new position to the items container
                 sliderMain.style.transform = `translateX(${currentPosition}px)`;
 
-                // After a short delay, reset the transition to re-enable animation
-                setTimeout(function () {
-                    sliderMain.style.transition = '';
-                }, 10);
-            }
+                // Check if we've reached the cloned first item
+                if (currentPosition === 0) {
+                    // Move to the actual last item
+                    currentPosition = -itemWidth * (sliderMain.children.length - 2);
+                    // Apply the new position instantly without animation
+                    sliderMain.style.transition = 'none';
+                    sliderMain.style.transform = `translateX(${currentPosition}px)`;
+
+                    // After a short delay, reset the transition to re-enable animation
+                    setTimeout(function () {
+                        sliderMain.style.transition = '';
+                    }, 10);
+                }
+            });
         }
-        prevBtn.addEventListener('click', () => {
-            // Move to the previous item
-            currentPosition += itemWidth;
-            // Restrict the position to prevent scrolling beyond the first item
-            currentPosition = Math.min(currentPosition, 0);
-            // Apply the new position to the items container
-            sliderMain.style.transform = `translateX(${currentPosition}px)`;
-
-            // Check if we've reached the cloned first item
-            if (currentPosition === 0) {
-                // Move to the actual last item
-                currentPosition = -itemWidth * (sliderMain.children.length - 2);
-                // Apply the new position instantly without animation
-                sliderMain.style.transition = 'none';
-                sliderMain.style.transform = `translateX(${currentPosition}px)`;
-
-                // After a short delay, reset the transition to re-enable animation
-                setTimeout(function () {
-                    sliderMain.style.transition = '';
-                }, 10);
-            }
-        });
     },
     closeResponThings () {
         responNav.style.transform = 'translateX(100%)'

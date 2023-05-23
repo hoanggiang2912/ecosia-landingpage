@@ -7,7 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/responsive.css">
-    <link rel="icon" type="image/x-icon" href="/assets/images/logo.svg">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -35,7 +35,7 @@
                                             <li class = "nav__item"><a class = "nav__link" href="">KEYCAPS</a></li>
                                         </ul>
                                     </li>
-                                    <li class="nav__item"><a href="" class="nav__link">KEYCAPS</a>
+                                    <li class="nav__item"><a href="/html/keycaps.html" class="nav__link">KEYCAPS</a>
                                         <ul>
                                             <li class = "nav__item"><a class = "nav__link" href="">GMK DUALSHOT® 2 Keycaps</a></li>
                                             <li class = "nav__item"><a class = "nav__link" href="">OTC Modo® Light Keycaps</a></li>
@@ -94,34 +94,51 @@
                         </li>
                     </ul>
                 </nav>
-                <nav class="respon-bar-icon">
-                    <i class="fa-solid fa-bars open-btn" style="color: white; font-size: 20px;"></i>
-                </nav>
+                <ul class="header-nav respon-bar-icon flex">
+                    <li class="nav__item">
+                        <!-- expand search-bar -->
+                        <div class="search-bar">
+                            <input type="text" name="searchbar" placeholder="Search..." class="bar">
+                            <i class="fa-solid fa-magnifying-glass magni-icon" style="cursor: pointer;"></i>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <i class="fa-solid fa-bars open-btn"></i>
+                    </li>
+                </ul>
             </div>
         </header>
         <!-- respon nav bar -->
         <div class="respon-nav">
-            <i class="fa-solid fa-bars respon-bar-icon close-btn" style="color: white; font-size: 20px;"></i>
-            <ul>
+            <div class="respon-nav__icons">
+                <ul class="respon-left-nav flex">
+                    <li class="nav__item">
+                        <a href="" class="nav__link"><i class="fa-solid fa-home"></i></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+                <i class="fa-solid fa-bars respon-bar-icon close-btn"></i>
+            </div>
+            <ul class="respon-nav__content">
                 <li class="nav__item">
-                    <i class="fa-solid fa-home"></i>
-                    <a href="" class="nav__link">Home</a>
+                    <a href="" class="nav__link">Keyboards</a>
                 </li>
                 <li class="nav__item">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <a href="" class="nav__link">Shop</a>
+                    <a href="" class="nav__link">Switches</a>
                 </li>
                 <li class="nav__item">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <a href="" class="nav__link">Search</a>
+                    <a href="/html/keycaps.html" class="nav__link">Keycaps</a>
                 </li>
                 <li class="nav__item">
-                    <i class="fa-solid fa-user"></i>
-                    <a href="" class="nav__link">Account</a>
+                    <a href="" class="nav__link">Kits</a>
                 </li>
                 <li class="nav__item">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="" class="nav__link">Your Cart</a>
+                    <a href="" class="nav__link">Deskpads</a>
                 </li>
             </ul>
         </div>
@@ -390,7 +407,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="product">   
+                                <div class="product">
                                     <a href="" class="product__banner">
                                         <img src="/assets/images/MOD005-Dark-Night-768x768.jpg" alt="">
                                         <div class="overlay">
@@ -1218,6 +1235,7 @@
             </div>
         </section>
         <hr>
+        <!-- wait list -->
         <section class="section wait-list">
             <h1 class="section-title">JOIN THE WAIT LIST</h1>
             <main class="wait-list-detail flex">
@@ -1242,6 +1260,7 @@
             </main>
         </section>
         <hr>
+        <!-- all products -->
         <section class="section all-products-section">
             <h2 class="section-title">SEE ALL OUR PRODUCTS</h2>
             <div class="product-selection__wrapper flex">
@@ -1323,6 +1342,7 @@
             margin-inline: 30%;
             border: 1px solid var(--hover);  
         ">
+        <!-- feedbacks -->
         <section class="section customer-feedbacks">
             <h2 class="section-title">CUSTOMERS FEEDBACK</h2>
             <div class="feedbacks-wrapper flex">
@@ -1377,6 +1397,7 @@
             </div>
         </section>
         <hr>
+        <!-- footer -->
         <footer class="footer flex">
             <div class="logo">
                 <a href="#">
