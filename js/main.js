@@ -22,6 +22,8 @@ const prevBtn = $('.prev-btn')
 const nextBtn = $('.next-btn')
 const sliderItem = $$('.slider__item')
 const sliderMain = $('.slider-main')
+// product detail
+
 
 
 for (let i = 0; i < renderActiveTabs.length ; i++) {

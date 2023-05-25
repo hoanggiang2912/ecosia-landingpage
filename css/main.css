@@ -260,7 +260,7 @@ body {
     width: 100%;
     padding: 60px 75px; 
 }
-.section > .section-title {
+.section .section-title {
     color: white;
     font-size: 28px;
     font-weight: 700;
@@ -419,7 +419,7 @@ body {
     padding: 16px 60px;
     text-transform: uppercase;
     border-radius: 5px; 
-    margin-top: 30px;
+    margin-top: 60px;
     transition: .2s linear;
 }
 .more-btn:hover {
@@ -669,7 +669,6 @@ body {
     margin-top: 45px;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 .selection__item{
     width: 435px;
@@ -780,6 +779,7 @@ body {
 footer {
     padding: 60px 80px;
     flex-direction: column;
+    background: linear-gradient(90deg, rgba(46, 63, 147, 0.4) 0%, rgba(57, 73, 155, 0.4) 100%);
 }
 .footer .logo {
     align-self: flex-start;
@@ -834,11 +834,14 @@ footer {
 .footer__nav .nav__link:hover {
     color: var(--hover);
 }
-footer.right-reserved {
+.footer__nav .social__icons {
+    gap: 20px;
+}
+.right-reserved {
     padding: 20px;
     color: white;
     text-align: center;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 8px;
     line-height: 24px;
     letter-spacing: 0.02em;
