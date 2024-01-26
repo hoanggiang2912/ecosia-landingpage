@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosia - Greenest search engine</title>
+
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="https://cdn-static.ecosia.org/static/icons/favicon.ico" type="image/x-icon">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="/sass/css/app.css">
+
+    <!-- font awesome link -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+    <link 
+        href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" 
+        rel="stylesheet"
+        type="text/css" />
+
+</head>
+<body>
+    <div class="container por primary-bg" style="min-height: 100vh;">
+        <!-- hero section start -->
+        <section class="section section__hidden hero__section grid flex-column" style="min-height: 640px">
+            <header class="header header--desktop pi20 flex-center width-full hide-on-tablet hide-on-mobile">
+                <div class="header__inner pb20 flex-full">
+                    <div class="half--left flex-center">
+                        <div class="logo logo--header">
+                            <svg viewBox="0 0 70 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-header__logo" data-v-48783958="" data-v-5fdfd1dc=""><path d="M63.153 4.534l1.276 7.909h-2.554l1.278-7.91zm6.845 13.81L67.054 1.656h-7.802l-2.944 16.688h4.616l.614-3.845h3.238l.61 3.845h4.612zm-19.799 0h4.907V1.656h-4.907v16.688zm-6.65-9.19c-1.324-.505-1.594-.799-1.594-1.258 0-.581.49-.895 1.521-.895 1.423 0 2.993.483 4.514 1.088V2.696c-1.054-.871-2.943-1.403-4.882-1.403-3.364 0-5.373 1.596-5.373 4.426 0 2.467 1.276 3.628 4.196 4.692l1.08.388c1.176.432 1.57.75 1.57 1.281 0 .411-.246.92-1.473.92-1.693 0-3.73-.823-5.128-1.573v6.023c1.325.677 3.41 1.257 5.472 1.257 3.51 0 5.52-1.451 5.52-4.547 0-2.104-.859-3.29-4.146-4.523l-1.276-.484zM32.829 10c0 1.91-.76 3.023-2.527 3.023-1.766 0-2.527-1.114-2.527-3.023 0-1.91.76-3.023 2.527-3.023 1.767 0 2.527 1.112 2.527 3.023zM30.3 1.293c-5.153 0-6.455 3.918-6.455 8.707 0 4.813 1.3 8.707 6.453 8.707 5.153 0 6.452-3.893 6.452-8.707 0-4.789-1.3-8.707-6.452-8.707h.002zm-11.9 5.925c1.473 0 2.576.433 4.147 1.282V3.01c-.908-.992-2.748-1.717-4.588-1.717-4.22 0-6.474 2.66-6.474 8.707 0 5.466 1.84 8.707 6.502 8.707 1.816 0 3.656-.725 4.563-1.741v-5.467c-1.57.847-2.673 1.283-4.146 1.283-1.938 0-2.993-.678-2.993-2.806s1.447-2.758 2.993-2.758h-.003zm-8.04-5.562H0v16.688h10.354v-5.32H3.926v-2.008h4.168V8.983H3.926V6.977h6.428l.007-5.321z" fill="currentColor" data-v-48783958="" data-v-5fdfd1dc=""></path></svg>
+                        </div>
+                        <form action="" class="form form--header form--search flex-full">
+                            <input type="text" class="form__input width-full" placeholder="Search the web to plant trees">
+                            <button class="form__button">
+                                <svg data-v-127adeaa="" data-v-44ab4e93="" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-test-id="button-icon" aria-hidden="true" class="button__icon button__icon icon icon--icon-search icon--size-s button__icon--icon-search button__icon--size-s"><path data-v-127adeaa="" fill-rule="evenodd" clip-rule="evenodd" d="M13.031 7.057a5.987 5.987 0 11-11.973 0 5.987 5.987 0 0111.973 0zm-10.586 0a4.6 4.6 0 109.2 0 4.6 4.6 0 00-9.2 0z" fill="currentColor"></path><path data-v-127adeaa="" fill-rule="evenodd" clip-rule="evenodd" d="M10.268 10.346a.75.75 0 011.061 0l3.305 3.305a.75.75 0 01-1.06 1.06l-3.306-3.305a.75.75 0 010-1.06z" fill="currentColor"></path></svg>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="half--right">
+                        <!-- browser detected -->
+                        <!-- <div class="flex-center">
+                            <div class="button button--header button--green">
+                                <a href="#" class="button__link">Add Ecosia to Chrome</a>
+                            </div>
+                            <div class="button button--header button--green">
+                                <a href="#" class="button__link">Add Ecosia to Firefox</a>
+                            </div>
+                            <div class="button button--header button--green">
+                                <a href="#" class="button__link">Add Ecosia to Edge</a>
+                            </div>
+                            <div class="button button--header button--green">
+                                <a href="#" class="button__link">Add Ecosia to Opera</a>
+                            </div>
+                            <div class="button button--header button--green">
+                                <a href="#" class="button__link">Add Ecosia to Safari</a>
+                            </div>
+                        </div> -->
+                        
+                        <div class="width-full flex j-end g20">
+                            <div class="dropdown__group por">
+                                <button class="btn btn--dropdown fill-btn btn--header btn--notification">
+                                    <i class="fal fa-bell"></i>
+                                    News
+                                </button>
+                                <ul class="poa p0 r0 dropdown__list notification__list shadow1 rounded-8 oh" style="width: 400px;">
+                                    <li class="dropdown__item news__item p20 width-full">
+                                        <a href="" class="dropdown__link text flex g20">
+                                            <div class="news__banner">
+                                                <img src="/assets/image/static-notification-light.22c3e494.svg" alt="News banner">
+                                            </div>
+                                            <div class="news__content">
+                                                <p class="body-medium fw-normal">
+                                                    We’re making some changes to your search experience. Got questions? 
+                                                </p>
+                                                <p class="body-medium fw-bold">Check out our FAQ</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item news__item p20 width-full">
+                                        <a href="" class="dropdown__link text flex g20">
+                                            <div class="news__banner">
+                                                <img src="/assets/image/static-notification-light.22c3e494.svg" alt="News banner">
+                                            </div>
+                                            <div class="news__content">
+                                                <p class="body-medium fw-normal">
+                                                    We’re making some changes to your search experience. Got questions? 
+                                                </p>
+                                                <p class="body-medium fw-bold">Check out our FAQ</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item news__item p20 width-full">
+                                        <a href="" class="dropdown__link text flex g20">
+                                            <div class="news__banner">
+                                                <img src="/assets/image/static-notification-light.22c3e494.svg" alt="News banner">
+                                            </div>
+                                            <div class="news__content">
+                                                <p class="body-medium fw-normal">
+                                                    We’re making some changes to your search experience. Got questions? 
+                                                </p>
+                                                <p class="body-medium fw-bold">Check out our FAQ</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item news__item p20 width-full">
+                                        <a href="" class="dropdown__link text flex g20">
+                                            <div class="news__banner">
+                                                <img src="/assets/image/static-notification-light.22c3e494.svg" alt="News banner">
+                                            </div>
+                                            <div class="news__content">
+                                                <p class="body-medium fw-normal">
+                                                    We’re making some changes to your search experience. Got questions? 
+                                                </p>
+                                                <p class="body-medium fw-bold">Check out our FAQ</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown__group por">
+                                <button class="btn btn--dropdown fill-btn btn--header btn--bar">
+                                    <svg data-v-127adeaa="" data-v-44ab4e93="" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-test-id="button-icon" aria-hidden="true" class="button__icon button__icon icon icon--icon-hamburger icon--size-s button__icon--icon-hamburger button__icon--size-s"><path data-v-127adeaa="" fill-rule="evenodd" clip-rule="evenodd" d="M15 2.8a.8.8 0 00-.8-.8H1.8a.8.8 0 100 1.6h12.4a.8.8 0 00.8-.8zm0 10a.8.8 0 00-.8-.8H1.8a.8.8 0 000 1.6h12.4a.8.8 0 00.8-.8zM14.2 7a.8.8 0 010 1.6H5.8a.8.8 0 110-1.6h8.4z" fill="currentColor"></path></svg>
+                                </button>
+                                <ul class="poa p0 r0 rounded-8 shadow1 dropdown__list option__list oh">
+                                    <li class="dropdown__item option__item">
+                                        <a href="" class="dropdown__link body-medium fw-normal option__link">Privacy</a>
+                                    </li>
+                                    <li class="dropdown__item option__item">
+                                        <a href="" class="dropdown__link body-medium fw-normal option__link">Gift trees</a>
+                                    </li>
+                                    <li class="dropdown__item option__item">
+                                        <a href="" class="dropdown__link body-medium fw-normal option__link">Blog</a>
+                                    </li>
+                                    <li class="dropdown__item option__item">
+                                        <a href="" class="dropdown__link body-medium fw-normal option__link">Careers</a>
+                                    </li>
+                                    <li class="dropdown__item option__item">
+                                        <a href="" class="dropdown__link body-medium fw-normal option__link">Help</a>
+                                    </li>
+                                    <li class="dropdown__item option__item">
+                                        <a href="" class="dropdown__link body-medium fw-normal option__link">Settings</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <header class="header header--mobile poa t0 l0 pi20 width-full hide-on-desktop">
+                <div class="header__inner header__inner--mobile pb20 flex-column g20">
+                    <div class="flex-center por">
+                        <div class="logo logo--header">
+                            <svg viewBox="0 0 70 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-header__logo" data-v-48783958="" data-v-5fdfd1dc=""><path d="M63.153 4.534l1.276 7.909h-2.554l1.278-7.91zm6.845 13.81L67.054 1.656h-7.802l-2.944 16.688h4.616l.614-3.845h3.238l.61 3.845h4.612zm-19.799 0h4.907V1.656h-4.907v16.688zm-6.65-9.19c-1.324-.505-1.594-.799-1.594-1.258 0-.581.49-.895 1.521-.895 1.423 0 2.993.483 4.514 1.088V2.696c-1.054-.871-2.943-1.403-4.882-1.403-3.364 0-5.373 1.596-5.373 4.426 0 2.467 1.276 3.628 4.196 4.692l1.08.388c1.176.432 1.57.75 1.57 1.281 0 .411-.246.92-1.473.92-1.693 0-3.73-.823-5.128-1.573v6.023c1.325.677 3.41 1.257 5.472 1.257 3.51 0 5.52-1.451 5.52-4.547 0-2.104-.859-3.29-4.146-4.523l-1.276-.484zM32.829 10c0 1.91-.76 3.023-2.527 3.023-1.766 0-2.527-1.114-2.527-3.023 0-1.91.76-3.023 2.527-3.023 1.767 0 2.527 1.112 2.527 3.023zM30.3 1.293c-5.153 0-6.455 3.918-6.455 8.707 0 4.813 1.3 8.707 6.453 8.707 5.153 0 6.452-3.893 6.452-8.707 0-4.789-1.3-8.707-6.452-8.707h.002zm-11.9 5.925c1.473 0 2.576.433 4.147 1.282V3.01c-.908-.992-2.748-1.717-4.588-1.717-4.22 0-6.474 2.66-6.474 8.707 0 5.466 1.84 8.707 6.502 8.707 1.816 0 3.656-.725 4.563-1.741v-5.467c-1.57.847-2.673 1.283-4.146 1.283-1.938 0-2.993-.678-2.993-2.806s1.447-2.758 2.993-2.758h-.003zm-8.04-5.562H0v16.688h10.354v-5.32H3.926v-2.008h4.168V8.983H3.926V6.977h6.428l.007-5.321z" fill="currentColor" data-v-48783958="" data-v-5fdfd1dc=""></path></svg>
+                        </div>
+                        <div class="poa abs-centerY r0">
+                            <button class="btn btn--open fill-btn btn--header btn--bar">
+                                <svg data-v-127adeaa="" data-v-44ab4e93="" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-test-id="button-icon" aria-hidden="true" class="button__icon button__icon icon icon--icon-hamburger icon--size-s button__icon--icon-hamburger button__icon--size-s"><path data-v-127adeaa="" fill-rule="evenodd" clip-rule="evenodd" d="M15 2.8a.8.8 0 00-.8-.8H1.8a.8.8 0 100 1.6h12.4a.8.8 0 00.8-.8zm0 10a.8.8 0 00-.8-.8H1.8a.8.8 0 000 1.6h12.4a.8.8 0 00.8-.8zM14.2 7a.8.8 0 010 1.6H5.8a.8.8 0 110-1.6h8.4z" fill="currentColor"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <form action="" class="form form--header form--search flex-full">
+                        <input type="text" class="form__input width-full" placeholder="Search the web to plant trees">
+                        <button class="form__button">
+                            <svg data-v-127adeaa="" data-v-44ab4e93="" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-test-id="button-icon" aria-hidden="true" class="button__icon button__icon icon icon--icon-search icon--size-s button__icon--icon-search button__icon--size-s"><path data-v-127adeaa="" fill-rule="evenodd" clip-rule="evenodd" d="M13.031 7.057a5.987 5.987 0 11-11.973 0 5.987 5.987 0 0111.973 0zm-10.586 0a4.6 4.6 0 109.2 0 4.6 4.6 0 00-9.2 0z" fill="currentColor"></path><path data-v-127adeaa="" fill-rule="evenodd" clip-rule="evenodd" d="M10.268 10.346a.75.75 0 011.061 0l3.305 3.305a.75.75 0 01-1.06 1.06l-3.306-3.305a.75.75 0 010-1.06z" fill="currentColor"></path></svg>
+                        </button>
+                    </form>
+                </div>
+            </header>
+            <div class="row no-gutters height-full flex-full">
+                <div class="hero--left col l-6 m-12 c-12 por">
+                    <div class="hero__inner hero--left__inner mt100">
+                        <div class="hero__content flex-column g24">
+                            
+                            <h1 class="hero__title fw-bold">The greenest way to search</h1>
+                            <h2 class="hero__subtitle fw-bold hide-on-tablet hide-on-mobile">You find what you need, we plant trees where they're needed </h2>
+                            
+                            <button class="cta__btn cta__btn--firefox btn fw-bold">
+                                <div class="icon">
+                                    <img src="/assets/image/firefox-logo.svg" alt="firefox logo - browser logo">
+                                </div>
+                                Switch to Ecosia - it's free
+                            </button>
+
+                            <div class="hero__counter p20" style="width: max-content">
+                                <div class="hero__counter__inner row no-gutters width-full">
+                                    <div class="counter__item col l-6 m-6 c-12">
+                                        <div class="counter__item__inner flex-column g12 v-center">
+                                            <div class="flex-center">
+                                                <div class="counter__icon">
+                                                    <svg data-v-5546393b="" data-v-79536f90="" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="counter-image" aria-hidden="true"><g data-v-5546393b="" clip-path="url(#tree-hand-clip0_719_450)"><path data-v-5546393b="" d="M18.553 30.373c.004-.22.005-.44.004-.658-.001-.33-.01-.658-.022-.987-.224-.338-.306-.508-.555-.845-.183-.248-.445-.577-.6-.719-.15-.139-.37-.344-.66-.53-2.015-1.301-4.45-1.982-6.85-2.118-.273-.016-.577-.05-.847-.033-.184.011-.21.052-.207.256.011.831-.013 1.628.247 2.435.326 1.011.986 1.89 1.94 2.38.458.236.918.468 1.421.596.96.245 2.048.255 3.033.277.337.007.68.02 1.018 0 .203-.013 1.938-.08 2.078-.054z" fill="#008009"></path><path data-v-5546393b="" d="M29.288 24.334c.002-.098-.02-.121-.115-.133-.886-.111-1.81-.01-2.686.055-.908.068-1.783.343-2.64.665a5.914 5.914 0 00-1.201.616c-1.293.862-2.204 2.175-2.906 3.585a1.97 1.97 0 00-.205.558c-.018.05-.059.04-.06-.004a88.826 88.826 0 01-.038-3.74c-.16.017-.329.03-.517.039-.146.003-.263.007-.463.008-.01.441.015 1.003.028 1.425.022.769.07 1.537.072 2.307.003.769-.026 1.547-.05 2.31-.006.174-.012.35-.038.523-.01.066-.06.608-.095.768v.002c.374-.011.745-.01 1.119.009.007-.209-.021-.748-.024-.92-.006-.309 0-.617-.014-.925a7.18 7.18 0 01.012-1.015c.006-.054.028-.08.085-.077.137.007.414.017.576.02 1.796.02 3.793-.194 5.492-.747 2.081-.678 3.675-2.246 3.675-4.536 0-.264-.01-.529-.007-.793z" fill="#72A11A"></path><path data-v-5546393b="" d="M30.773 37.09c.266.058.535.14.766.288.044.028.09.006.133-.038a35.522 35.522 0 011.758-1.649c.31-.27.626-.535.948-.792.296-.237.603-.528.945-.692.352-.168.711-.32 1.086-.44.51-.163 1.007-.219 1.51.004.195.086.42.173.594.311.12-.143.25-.4.308-.488.366-.562.157-1.185-.42-1.51-1.123-.635-2.161-.024-3.03.704-.257.215-.46.485-.733.687-.264.195-.504.422-.75.641-.358.321-.704.656-1.069.969-.36.31-.737.601-1.109.898-.265.211-.521.346-.811.525-.206.128-.51.247-.848.42.244.042.48.109.722.162zM30.203 36.958H30.2h.003z" fill="#CA8461"></path><path data-v-5546393b="" d="M26.673 36.916c.3.001.47-.005.686-.013.289-.01.578-.021.868-.03.57-.02 1.145-.038 1.713.038.037.005.074.011.11.018.34-.174.642-.292.849-.42.29-.18.545-.315.81-.526.373-.296.75-.588 1.11-.898.365-.313.711-.648 1.07-.968.244-.22.485-.446.749-.641.134-.1.252-.215.367-.333.119-.122.235-.246.365-.355.215-.18.44-.353.675-.502-.055-.14-.412-.21-.51-.227a1.538 1.538 0 00-.678.038c-.209.061-.415.189-.593.31a2.45 2.45 0 00-.332.318c-.037.042-.06.051-.112.043-.08-.015-.225-.056-.396-.054-.353.006-.606.085-.828.245-.218.17-.442.347-.654.52l-.346.283c-.904.737-1.734 1.547-2.758 2.116-.395.22-.795.39-1.209.571-.085.037-.985.413-1.172.467h.216zM30.132 36.943a3.775 3.775 0 00-.08-.014l.08.014z" fill="#CA8461"></path><path data-v-5546393b="" d="M12.769 36.893c.538.008 1.078.02 1.615.01.773-.016 1.546.01 2.319-.009.616-.014 1.232-.008 1.848-.002 2.08.02 6.782.022 7.906.024-.09-.267-.528-.906-.663-1.069-.987-1.26-2.305-1.697-3.064-1.95a12.245 12.245 0 00-2.196-.479 13.641 13.641 0 00-2.183-.1c-1.491.066-3.376.558-4.398 1.269-1.524.961-2.217 1.954-2.444 2.303.42 0 .84-.004 1.26.003z" fill="#632F3C"></path><path data-v-5546393b="" d="M18.513 24.052c.039-.952.1-1.679.317-2.575-.085-.096-.168-.192-.255-.286-.347-.372-.752-.744-1.184-1.021-.705-.453-1.507-.718-2.307-.927-.188-.05-.556-.245-.588.061-.02.245-.008.349-.012.556-.004.412.001.828-.004 1.24-.006.55-.003 1.06.064 1.623.019.119.115.823.4 1.407.1.2.488.783.876 1.106.18.136.374.25.578.342.6.272 1.4.42 2.06.405.006-.644.029-1.288.055-1.93z" fill="#72A11A"></path><path data-v-5546393b="" d="M19.844 19.237c.197-.312.416-.61.656-.892.407-.48.875-.913 1.403-1.257a5.65 5.65 0 012.267-.864c.198-.029.394-.058.595-.06.24-.002.39.032.452.281.192.767.396 1.526.413 2.324a10.09 10.09 0 01-.254 2.397l-.005.023c-.07.317-.179.624-.296.927l-.113.285c-.127.319-.265.6-.438.897a9.69 9.69 0 01-.26.427 4.942 4.942 0 01-.675.822c-.309.279-.646.486-1.034.657-.306.135-.637.227-.963.339-.512.154-1.04.25-1.566.32-.365.05-.685.093-1.107.112-.146.002-.261.007-.462.008.007-.644.03-1.288.056-1.931.041-1.025.11-1.789.369-2.784.204-.785.53-1.347.962-2.031z" fill="#008009"></path><path data-v-5546393b="" d="M38.81 34.939c-.128.55-.722 1.069-1.038 1.434-.24.279-.488.55-.735.823a51.881 51.881 0 01-1.707 1.815c-1.18 1.188-2.447 2.3-3.86 3.206-.497.318-1.01.61-1.522.902-1.284.73-2.554 1.489-3.826 2.229-1.217.708-2.504 1.38-3.916 1.581-2.461.349-5.03-.566-7.404-1.095a123.284 123.284 0 00-3.74-.78 68.127 68.127 0 00-4.937-.772c-.779-.09-1.563-.188-2.347-.212-.627-.02-1.43-.018-2.056-.079-.383-.037-.47-.031-.476-.263-.011-.392.036-.907.036-1.299v-1.376c-.001-1.118.018-2.241-.009-3.357 0-.09-.007-.219-.007-.45 0-.37.12-.354.309-.361h1.012c2.123 0 3.202.008 5.325.004l1.29-.003c.74-.002 1.48.002 2.22.003.449.001.898-.003 1.347.004.538.008 1.078.02 1.615.01.773-.016 1.546.01 2.319-.009.616-.014 1.232-.008 1.848-.002 2.275.022 7.68.022 8.122.024.3.001.47-.005.686-.013.289-.01.578-.021.868-.03.57-.02 1.145-.038 1.713.038.283.039.555.118.833.179.266.058.535.14.766.287.044.028.09.006.133-.037a35.522 35.522 0 011.758-1.649c.31-.27.626-.535.948-.792.296-.237.603-.528.945-.692.352-.168.711-.32 1.086-.44.51-.163 1.007-.219 1.51.004.274.12.607.245.777.507.142.22.165.443.114.66z" fill="#FFAF87"></path></g><defs data-v-5546393b=""><clipPath data-v-5546393b="" id="tree-hand-clip0_719_450"><path data-v-5546393b="" fill="#fff" d="M0 0h48v48H0z"></path></clipPath></defs></svg>
+                                                </div>
+                                                <div class="counter__digits flex counter__digits--notranslate">
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="1">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="9">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="6">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="counter__digit--seperator">,</div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="4">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="4">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="7">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="counter__digit--seperator">,</div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="5">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="3">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="4">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tal">
+                                                <p class="mt6 title-medium fw-bold primary-text">trees planted by Ecosia</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pi20">
+                                        <div class="global__devider"></div>
+                                    </div>
+                                    <div class="counter__item col l-6 m-6 c-12">
+                                        <div class="counter__item__inner flex-column g12 v-center">
+                                            <div class="flex-center">
+                                                <div class="counter__icon">
+                                                    <svg data-v-5546393b="" data-v-79536f90="" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="counter-image" aria-hidden="true"><g data-v-5546393b="" clip-path="url(#tree-money-clip0_719_428)"><path data-v-5546393b="" d="M11.766 22.372c-.091.278-.196.547-.315.8-1.016 2.179-3.037 3.174-5.372 3.102-1.612-.049-3.392-.611-4.397-1.948-1.442-1.917-1.23-4.98-.07-6.976 1.433-2.466 4.564-3.158 7.145-2.262 3.105 1.079 3.962 4.352 3.009 7.284z" fill="#FD4256"></path><path data-v-5546393b="" d="M4.092 21.347s-.008.837.146 1.224c.121.306.316.6.579.798.128.096.266.157.415.21.061.022.18.068.278.106a.245.245 0 01.156.225l.008.779s-.015.13.108.146c.181.025 1.304.02 1.304.02s.114.009.114-.162c0-.172-.05-.643-.05-.644-.007-.108-.025-.247.05-.344.039-.051.114-.072.169-.101.076-.041.15-.086.222-.133.288-.19.571-.428.754-.724l.01-.016c.327-.547.36-1.516-.013-2.046-.44-.628-1.035-1.014-1.54-1.319-.504-.304-.602-.697-.526-1.135.076-.438.41-.579.724-.525.353.061.594.511.555.991-.007.1.01.117.216.113l.958-.011c.197-.002-.017-.729-.056-.838a2.28 2.28 0 00-1.11-1.242c-.077-.038-.191-.064-.191-.235 0-.137.002-.274.004-.41l.002-.181c.001-.07.022-.26-.136-.265l-.164-.006a66.499 66.499 0 00-.447-.012l-.48-.012s-.104-.008-.104.097c0 .128-.001.257.008.385.012.177.07.405-.102.508-.064.038-.139.054-.21.074-.21.061-.404.17-.578.302a1.75 1.75 0 00-.558.66c-.16.357-.164.783-.09 1.161.068.354.312.666.573.903.336.305.74.483 1.101.752.254.19.481.428.599.722.118.293.113.648-.067.909-.337.49-1.164.353-1.377-.186a1.155 1.155 0 01-.076-.486c.01-.165-.108-.176-.176-.176-.295 0-.59-.019-.885-.03-.087-.004-.117.079-.117.154zM33.319 40.62c.006-.118-.002-.182-.117-.184-.794-.012-1.693-.028-2.22-.039-.526-.01-1.851-.022-2.778-.034-.32-.004-.689-.002-1.01-.02.043 2.779.16 8.337.16 8.337l.66.008c1.733.027 3.462.014 5.192.026a.129.129 0 00.13-.128c.005-.827-.01-1.58.003-2.422.011-.723.01-3.173-.003-3.621-.018-.641-.05-1.28-.017-1.923z" fill="#FF8A8C"></path><path data-v-5546393b="" d="M7.985 48.733l.003-.173c.006-.242.01-.504.015-.746.011-.61.004-1.221.004-1.831V44.39c0-.722.006-1.427.006-2.15v-.116-1.94c0-.197-.038-.241-.234-.241-1.744 0-3.489-.01-5.233-.024a6.294 6.294 0 00-.623.022c-.216.013-.156.367-.155.533 0 .17.003.34.002.511-.012 3.088.01 3.346-.059 6.08-.013.504-.026.94-.015 1.49.002.078.065.14.144.14.983.004 1.967.027 2.946.03l3.2.007z" fill="#F7BC00"></path><path data-v-5546393b="" d="M33.364 27.265a.105.105 0 01.022-.183c.515-.203.964-.682 1.302-1.102a4.907 4.907 0 00.749-4.831 4.814 4.814 0 00-1.824-2.276c-.829-.547-1.812-.802-2.802-.816a4.31 4.31 0 00-.434.01c-.053.005-.121.014-.183.005a.173.173 0 01-.144-.158c-.022-.249.003-.504-.011-.755a4.57 4.57 0 00-.103-.787c-.249-1.054-.888-1.985-1.718-2.668a5.568 5.568 0 00-2.951-1.247c-2.89-.29-6.462 1.89-6.348 5.076.002.07.001.139 0 .209 0 .054-.057.09-.106.065-.845-.427-1.869-.523-2.789-.29-.501.126-.969.36-1.403.637-.328.208-.602.47-.894.716-.444.372-.77.93-.965 1.47a6.136 6.136 0 00-.257 3.186c.106.547.193 1.046.46 1.547.24.45.565.864.901 1.235.183.201.588.485.835.649a.19.19 0 01.023.298l-.262.241c-1.852 1.543-2.018 3.896-.73 5.994 1.251 2.041 3.849 2.682 5.949 1.6.256-.133.514-.263.725-.466.022-.021.043-.036.073-.022.026.012.02.039.022.06.001.037.008.48.01.516.068 1.327.005 2.246.026 3.574.014.93.03 1.86.041 2.789.01.757-.043 1.514-.042 2.27.003 1.124.054 2.247.025 3.37-.01.389-.02.777-.025 1.165-.002.108.001.215 0 .347h.587c2.078.004 4.158-.032 6.231-.013-.05-2.875-.121-5.751-.165-8.627a24.53 24.53 0 01-.002-.849c.013-.72.04-1.438.037-2.161a80.247 80.247 0 01.018-2.524.073.073 0 01.119-.057c2.224 1.707 5.453 1.777 7.206-.695.687-.97.962-2.199.795-3.372-.188-1.312-.927-2.378-1.998-3.13z" fill="#008009"></path><path data-v-5546393b="" d="M20.536 48.693v-.13-.216c.005-.389.014-.777.025-1.165.029-1.123-.022-2.247-.025-3.37-.001-.757.052-1.514.042-2.271-.011-.93-.027-1.86-.041-2.789-.009-.577-.002-1.077.003-1.567-.616.002-1.314.027-1.921.027-.714.008-1.427.013-2.14.017-.692.003-1.387-.012-2.077.038-.104.008-.148.044-.151.15-.021.693-.001 1.385-.031 2.078-.036.812.01 1.628.006 2.442l-.001.138V42.408l.001.02v.063l.001.015v.007l.001.02c.048 1.733.042 3.466.03 5.198-.003.332-.025.666-.03.998 0 0 3.475-.016 5.212-.033.324-.003 1.096-.003 1.096-.003z" fill="#0094C7"></path><path data-v-5546393b="" d="M14.257 47.732c.013-1.733.02-3.465-.028-5.198a19.417 19.417 0 01-.004-.46c-.253.006-.375.018-.55.012-.615 0-1.222-.003-1.838.019-.655.024-1.273.036-1.929.04-.403.002-.81-.016-1.213-.02-.156-.003-.681 0-.681 0l-.001.117c0 .721-.007 1.427-.007 2.149v1.592c0 .61.008 1.22-.004 1.83-.004.243-.008.505-.014.747l-.003.173c2.079.003 4.165.003 6.243-.004.005-.333.027-.666.03-.997z" fill="#FD4256"></path></g><defs data-v-5546393b=""><clipPath data-v-5546393b="" id="tree-money-clip0_719_428"><path data-v-5546393b="" fill="#fff" d="M0 0h48v48H0z"></path></clipPath></defs></svg>
+                                                </div>
+                                                <div class="counter__digits flex counter__digits--notranslate">
+                                                    <div class="counter__digit--seperator">€</div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="8">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="1">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="counter__digit--seperator">,</div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="4">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="5">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="1">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="counter__digit--seperator">,</div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="3">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="3">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="counter__digit counter__digit--notranslate oh" data-number="8">
+                                                        <div class="counter__digit__inner">
+                                                            <div class="counter__digit">0</div>
+                                                            <div class="counter__digit">1</div>
+                                                            <div class="counter__digit">2</div>
+                                                            <div class="counter__digit">3</div>
+                                                            <div class="counter__digit">4</div>
+                                                            <div class="counter__digit">5</div>
+                                                            <div class="counter__digit">6</div>
+                                                            <div class="counter__digit">7</div>
+                                                            <div class="counter__digit">8</div>
+                                                            <div class="counter__digit">9</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tal">
+                                                <p class="mt6 title-medium fw-bold primary-text">spent on climate action</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="hero--right col l-6 m-0 c-0 por">
+                    <div class="img-cover width-full height-full mask__img"></div>
+                    <div class="lazy-load width-full height-full">
+                        <img src="/assets/image/above-fold.ba8d71c--lazyload.jpg" class="img-cover" data-src="/assets/image/above-fold@3x.2fc91b4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero section end -->
+
+        <!-- slider start -->
+        <section class="section section__hidden section__wrapper slider__wrapper white-bg">
+            <div class="section__content slider__content">
+                <div class="section__content__holder slider__content__holder flex g60">
+                    <div class="slider__imgs oh">
+                        <div class="slider__imgs__inner flex">
+                            <div class="slider__img__holder banner-cover active" data-index="0" style="background-image: url('/assets/image/extension-slide1.b3c72e3e.svg')">
+                            </div>
+                            <div class="slider__img__holder banner-cover" data-index="1" style="background-image: url('/assets/image/extension-slide2.845456e1.svg')">
+                            </div>
+                            <div class="slider__img__holder banner-cover" data-index="2" style="background-image: url('/assets/image/extension-slide3.f38fb6a7.svg')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__texts oh">
+                        <h2 class="slider__text__h2 fw-bold">Make the switch to Ecosia</h2>
+                        <div class="slider__text__holder flex">
+                            <div class="slider__text active" data-index="0">
+                                <h4 class="title-medium fw-bold">Join the Ecosia community</h4>
+                                <p class="body-large fw-normal">Make Ecosia your default search engine to be climate active every day (for free!)</p>
+                            </div>
+                            <div class="slider__text" data-index="1">
+                                <h4 class="title-medium fw-bold">Let's grow together </h4>
+                                <p class="body-large fw-normal">Keep track of our collective impact on trees, renewable energy, climate action, and more. </p>
+                            </div>
+                            <div class="slider__text" data-index="2">
+                                <h4 class="title-medium fw-bold">Make greener choices faster </h4>
+                                <p class="body-large fw-normal">See which companies lead to a greener world. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__controller flex g20">
+                        <button class="btn--prev icon-btn transparent">
+                            <i class="far fa-arrow-left"></i>
+                        </button>
+                        <div class="indicator flex g6 v-center">
+                            <button class="indicator__item active" data-index="0"></button>
+                            <button class="indicator__item" data-index="1"></button>
+                            <button class="indicator__item" data-index="2"></button>
+                        </div>
+                        <button class="btn--next icon-btn transparent">
+                            <i class="far fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- slider end -->
+
+        <!-- forest section start -->
+        <section class="section section__hidden section--forest por white-bg">
+            <div class="ma banner-contain banner--forest"></div>
+            <div class="mask__img--wave banner-cover poa b0 l0 r0"></div>
+        </section>
+        <!-- forest section end -->
+        
+        <!-- project section start -->
+        <section class="section section__hidden section__wrapper section--project">
+            <div class="section__content">
+                <div class="section__title">
+                    <h4 class="section__title--h4 title-medium fw-bold ttu">Where are our trees being planted?</h4>
+                    <h2 class="section__title--h2 fw-bold">We plant in 35+ countries with local organizations </h2>
+                </div>
+                <main class="project__card__wrapper">
+                    <div class="project__card project__card--brazil oh rounded-8">
+                        <div class="project__card__banner oh lazy-load">
+                            <div class="banner banner-cover" data-src="/assets/image/project-card-1.jpg" style="background-image: url('/assets/image/project-card-1-lazyload.jpg')"></div>
+                            <div class="mask__img"></div>
+                        </div>
+                        <div class="project__card__content">
+                            <h4 class="m20 project__card__title title-large fw-bold">Brazil</h4>
+                            <p class="mi20 body-large fw-normal">Planting projects in Brazil protect thousands of endangered plants and animals.</p>
+                            <button class="m20 btn outline-btn">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="project__card project__card--senegal oh rounded-8">
+                        <div class="project__card__banner oh lazy-load">
+                            <div class="banner banner-cover" data-src="/assets/image/project-card-2.jpg" style="background-image: url('/assets/image/project-card-2-lazyload.jpg')"></div>
+                            <div class="mask__img"></div>
+                        </div>
+                        <div class="project__card__content">
+                            <h4 class="m20 project__card__title title-large fw-bold">Senegal </h4>
+                            <p class="mi20 body-large fw-normal">Planting trees in Senegal helps restore desertified land to its former fertility. </p>
+                            <button class="m20 btn outline-btn">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="project__card project__card--indonesia oh rounded-8">
+                        <div class="project__card__banner oh lazy-load">
+                            <div class="banner banner-cover" data-src="/assets/image/project-card-3.jpg" style="background-image: url('/assets/image/project-card-3-lazyload.jpg')"></div>
+                            <div class="mask__img"></div>
+                        </div>
+                        <div class="project__card__content">
+                            <h4 class="m20 project__card__title title-large fw-bold">Indonesia </h4>
+                            <p class="mi20 body-large fw-normal">In Indonesia, we help restore forests on former palm oil plantations while creating alternative sources of income.</p>
+                            <button class="m20 btn outline-btn">Learn more</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+        <!-- project section end -->
+
+        <!-- before after section start -->
+        <section class="section section__hidden section__wrapper section--before-after">
+            <div class="section__content">
+                <div class="section__content__inner">
+                    <div class="section__content--text">
+                        <h4 class="section__title--h4 title-medium fw-bold ttu">Our tree planting approach</h4>
+                        <h3 class="section__title--h3 fw-bold sub-font">We restore and protect biodiversity hotspots</h3>
+                        <p class="body-large fw-normal before-after--text">Instead of monocultures, we grow over 500 different native species where they are needed most. Always shoulder-to-shoulder with local communities. </p>
+                    </div>
+                    <div class="section__content--pictures por" id="parent">
+                        <div class="before-after--pictures por oh">
+                            <div class="before-after--picture banner-cover por oh">
+                                <div class="before-after--picture before--picture banner-cover oh">
+                                    <div class="before-after--picture__inner">
+                                        <img src="/assets/image/img-before.1d3e4c7.jpg" alt="before" style="width: 100%; height: 100%">
+                                    </div>
+                                </div>
+                                <div class="before-after--picture after--picture banner-cover oh">
+                                    <div class="before-after--picture__inner">
+                                        <img src="/assets/image/img-after.4701afd.jpg" alt="after" style="height: 100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- before after section end -->
+
+        <!-- map section start -->
+        <section class="section section__hidden section__wrapper section--map">
+            <div class="section__content">
+                <div class="section__title flex-center flex-column por z10">
+                    <h4 class="section__title--h4 title-medium fw-bold ttu">Trees planted by the Ecosia community</h4>
+
+                    <div class="counter__digits map--counter flex counter__digits--notranslate">
+                        <div class="counter__digit counter__digit--notranslate oh" data-number="1">
+                            <div class="counter__digit__inner">
+                                <div class="counter__digit">0</div>
+                                <div class="counter__digit">1</div>
+                                <div class="counter__digit">2</div>
+                                <div class="counter__digit">3</div>
+                                <div class="counter__digit">4</div>
+                                <div class="counter__digit">5</div>
+                                <div class="counter__digit">6</div>
+                                <div class="counter__digit">7</div>
+                                <div class="counter__digit">8</div>
+                                <div class="counter__digit">9</div>
+                            </div>
+                        </div>
+                        <div class="counter__digit counter__digit--notranslate oh" data-number="9">
+                            <div class="counter__digit__inner">
+                                <div class="counter__digit">0</div>
+                                <div class="counter__digit">1</div>
+                                <div class="counter__digit">2</div>
+                                <div class="counter__digit">3</div>
+                                <div class="counter__digit">4</div>
+                                <div class="counter__digit">5</div>
+                                <div class="counter__digit">6</div>
+                                <div class="counter__digit">7</div>
+                                <div class="counter__digit">8</div>
+                                <div class="counter__digit">9</div>
+                            </div>
+                        </div>
+                        <div class="counter__digit counter__digit--notranslate oh" data-number="6">
+                            <div class="counter__digit__inner">
+                                <div class="counter__digit">0</div>
+                                <div class="counter__digit">1</div>
+                                <div class="counter__digit">2</div>
+                                <div class="counter__digit">3</div>
+                                <div class="counter__digit">4</div>
+                                <div class="counter__digit">5</div>
+                                <div class="counter__digit">6</div>
+                                <div class="counter__digit">7</div>
+                                <div class="counter__digit">8</div>
+                                <div class="counter__digit">9</div>
+                            </div>
+                        </div>
+                        <div class="counter__digit--seperator">,</div>
+                        <div class="counter__digit counter__digit--notranslate oh" data-number="4">
+                            <div class="counter__digit__inner">
+                                <div class="counter__digit">0</div>
+                                <div class="counter__digit">1</div>
+                                <div class="counter__digit">2</div>
+                                <div class="counter__digit">3</div>
+                                <div class="counter__digit">4</div>
+                                <div class="counter__digit">5</div>
+                                <div class="counter__digit">6</div>
+                                <div class="counter__digit">7</div>
+                                <div class="counter__digit">8</div>
+                                <div class="counter__digit">9</div>
+                            </div>
+                        </div>
+                        <div class="counter__digit counter__digit--notranslate oh" data-number="4">
+                            <div class="counter__digit__inner">
+                                <div class="counter__digit">0</div>
+                                <div class="counter__digit">1</div>
+                                <div class="counter__digit">2</div>
+                                <div class="counter__digit">3</div>
+                                <div class="counter__digit">4</div>
+                                <div class="counter__digit">5</div>
+                                <div class="counter__digit">6</div>
+                                <div class="counter__digit">7</div>
+                                <div class="counter__digit">8</div>
+                                <div class="counter__digit">9</div>
+                            </div>
+                        </div>
+                        <div class="counter__digit counter__digit--notranslate oh" data-number="7">
+                            <div class="counter__digit__inner">
+                                <div class="counter__digit">0</div>
+                                <div class="counter__digit">1</div>
+                                <div class="counter__digit">2</div>
+                                <div class="counter__digit">3</div>
+                                <div class="counter__digit">4</div>
+                                <div class="counter__digit">5</div>
+                                <div class="counter__digit">6</div>
+                                <div class="counter__digit">7</div>
+                                <div class="counter__digit">8</div>
+                                <div class="counter__digit">9</div>
+                            </div>
+                        </div>
+                        <div class="counter__digit--seperator">,</div>
+                        <div class="counter__digit counter__digit--notranslate oh" data-number="5">
+                            <div class="counter__digit__inner">
+                                <div class="counter__digit">0</div>
+                                <div class="counter__digit">1</div>
+                                <div class="counter__digit">2</div>
+                                <div class="counter__digit">3</div>
+                                <div class="counter__digit">4</div>
+                                <div class="counter__digit">5</div>
+                                <div class="counter__digit">6</div>
+                                <div class="counter__digit">7</div>
+                                <div class="counter__digit">8</div>
+                                <div class="counter__digit">9</div>
+                            </div>
+                        </div>
+                        <div class="counter__digit counter__digit--notranslate oh" data-number="3">
+                            <div class="counter__digit__inner">
+                                <div class="counter__digit">0</div>
+                                <div class="counter__digit">1</div>
+                                <div class="counter__digit">2</div>
+                                <div class="counter__digit">3</div>
+                                <div class="counter__digit">4</div>
+                                <div class="counter__digit">5</div>
+                                <div class="counter__digit">6</div>
+                                <div class="counter__digit">7</div>
+                                <div class="counter__digit">8</div>
+                                <div class="counter__digit">9</div>
+                            </div>
+                        </div>
+                        <div class="counter__digit counter__digit--notranslate oh" data-number="4">
+                            <div class="counter__digit__inner">
+                                <div class="counter__digit">0</div>
+                                <div class="counter__digit">1</div>
+                                <div class="counter__digit">2</div>
+                                <div class="counter__digit">3</div>
+                                <div class="counter__digit">4</div>
+                                <div class="counter__digit">5</div>
+                                <div class="counter__digit">6</div>
+                                <div class="counter__digit">7</div>
+                                <div class="counter__digit">8</div>
+                                <div class="counter__digit">9</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map__section__background">
+                    <div class="map por">
+                        <div class="map__banner banner-contain abs-full" style="background-image: url(/assets/image/map-light-mode.f4068983.svg);"></div>
+                    </div>
+                </div>
+
+                <div class="map-section__statistics-wrapper">
+                    <div class="statistics map-section__statistics">
+                        <div class="statistics__item">
+                            <h2 class="statistics__title">20 million</h2>
+                            <p class="statistics__description">people using Ecosia</p>
+                        </div>
+                        <div class="statistics__item">
+                            <h2 class="statistics__title">900+</h2>
+                            <p class="statistics__description">species</p>
+                        </div>
+                        <div class="statistics__item">
+                            <h2 class="statistics__title">35+</h2>
+                            <p class="statistics__description">countries involved</p>
+                        </div>
+                        <div class="statistics__item">
+                            <h2 class="statistics__title">70+</h2>
+                            <p class="statistics__description">active projects</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="width-full flex-center">
+                    <button class="btn fill-btn btn--discover">Discover all projects</button>
+                </div>
+            </div>
+        </section>
+        <!-- map section end -->
+
+        <!-- wave seperator start -->
+        <div class="section wave__seperator por banner-contain" 
+        style="background-image: url(/assets/image/tertiary-l.99ff2dad.svg);">
+        </div>
+        <!-- wave seperator end -->
+        
+        <!-- report section start -->
+        <section class="section section__hidden section__wrapper section--report">
+            <div class="section__content">
+                <div class="section__content__inner">
+                    <div class="section__content--text">
+                        <div class="block">
+                            <h4 class="section__title--h4 title-medium fw-bold ttu">Monthly financial report</h4>
+                            <h3 class="section__title--h3 fw-bold sub-font">Ecosia’s revenue in November 2023</h3>
+                        </div>
+                        <p class="body-large fw-normal text--report">We publish our financial reports every month so you can see exactly how much money we made, how we spent it, and how many trees we planted.</p>
+                    </div>
+                    <button class="report-btn btn outline-btn">See our financial report</button>
+                    <div class="report-chart por">
+                        <div class="chart-donut banner-cover abs-full" style="background-image: url(/assets/image/financial-reports-donut.49a00648.svg);">
+                        </div>
+                        <div class="report-text__wrapper poa">
+                            <div class="report-text__inner tac">
+                                <div class="report-section__total-amount sub-font">2,626,358€</div>
+                                <div class="report-section__total-label">total income this month</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- report section end -->
+
+        <!-- claim value section start -->
+        <section class="section section__hidden section__wrapper section--claim-values">
+            <div class="section__content">
+                <div class="section__title">
+                    <h4 class="section__title--h4 title-medium fw-bold ttu">Why choose Ecosia? </h4>
+                    <h2 class="section__title--h2 fw-bold">What we stand for</h2>
+                </div>
+                <div class="claim-values__wrapper">
+                    <div class="claim-value__item flex">
+                        <div class="claim-value__background__wrapper">
+                            <div class="claim-value__background banner-cover" style="background-image: url(/assets/image/profits.f00cdef5.svg);"></div>
+                        </div>
+                        <div class="claim-value__text">
+                            <div class="claim-value__text--h4 fw-bold">100% of profits for the planet </div>
+                            <div class="claim-value__text--body body-large fw-normal">We use all our profits for climate action, with the majority going into tree-planting projects around the world. </div>
+                        </div>
+                    </div>
+                    <div class="claim-value__item flex">
+                        <div class="claim-value__background__wrapper">
+                            <div class="claim-value__background banner-cover" style="background-image: url(/assets/image/community.8a25d277.svg);"></div>
+                        </div>
+                        <div class="claim-value__text">
+                            <div class="claim-value__text--h4 fw-bold">
+Collective climate action</div>
+                            <div class="claim-value__text--body body-large fw-normal">The Ecosia community is the planet's largest tree-planting movement, making a difference every day.</div>
+                        </div>
+                    </div>
+                    <div class="claim-value__item flex">
+                        <div class="claim-value__background__wrapper">
+                            <div class="claim-value__background banner-cover" style="background-image: url(/assets/image/coin.454fb56c.svg);"></div>
+                        </div>
+                        <div class="claim-value__text">
+                            <div class="claim-value__text--h4 fw-bold">No greenwashing </div>
+                            <div class="claim-value__text--body body-large fw-normal">We use all our profits for climate action, with the majority going into tree-planting projects around the world. </div>
+                        </div>
+                    </div>
+                    <div class="claim-value__item flex">
+                        <div class="claim-value__background__wrapper">
+                            <div class="claim-value__background banner-cover" style="background-image: url(/assets/image/world.b2ddc237.svg);"></div>
+                        </div>
+                        <div class="claim-value__text">
+                            <div class="claim-value__text--h4 fw-bold">Beyond neutral </div>
+                            <div class="claim-value__text--body body-large fw-normal">Our solar panels produce enough energy to power your searches twice over, meaning more renewables (and fewer fossil fuels) in the energy grid. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- claim value section end -->
+
+        <!-- wave seperator start -->
+        <div class="section wave__seperator por banner-cover"
+        style="background-image: url(/assets/image/primary-l.b4b9ccac.svg); height: 238px;
+    padding-bottom: 20%; background-position-y: 4px;">
+        </div>
+        <!-- wave seperator end -->
+
+        <!-- joining section start -->
+        <section class="section section__hidden section__wrapper section--joining">
+            <div class="section__content">
+                <h2 class="section__title--h2 fw-bold sub-font">Join 20 million people growing the right trees in the right places</h2>
+
+                <div class="flex-center">
+                    <button class="btn fill-btn fw-smb" style="height: 56px">
+                        <img src="/assets/image/firefox-logo.svg" alt="">
+                        Switch to Ecosia - It's free
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- joining section end -->
+
+        <!-- forest section start -->
+        <section class="section section__hidden section--forest section--forest--next por">
+            <div class="ma banner-contain banner--forest"></div>
+            <div class="mask__img--wave banner-cover poa b0 l0 r0"></div>
+        </section>
+        <!-- forest section end -->
+
+        <!-- footer start -->
+        <footer class="footer footer--full por width-full">
+            <svg class="poa footer__wave" width="1440" height="88" viewBox="0 0 1440 88" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="full-footer__wave" data-v-50694b94="">
+                <path d="M0 47.577c95.583 0 106.97 8.729 226.979 8.729 120.009 0 176.224-34.103 296.233-34.103 105.102 0 97.379 13.486 217.388 13.486C833.777 35.689 900.66 0 1008.17 0c120.01 0 116.52 20.533 236.5 20.533 119.97 0 114.69-11.924 195.33-11.924V88H0V47.577z" fill="currentColor" data-v-50694b94=""></path>
+            </svg>
+            <div class="footer__content">
+                <div class="footer__content--partner-logo">
+                    <img src="/assets/image/b-corp.e1b18018.svg" alt="">
+                </div>
+                <div class="footer__menu">
+                    <h4 class="footer__menu__title title-medium fw-bold ttu">What we do</h4>
+                    <ul class="footer__menu__list">
+                        <li class="footer__menu__list__item">
+                            <a href="" class="footer__menu__list__link body-large fw-light">
+                                Financial report
+                            </a>
+                        </li>
+                        <li class="footer__menu__list__item">
+                            <a href="" class="footer__menu__list__link body-large fw-light">
+                                Gift trees
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu">
+                    <h4 class="footer__menu__title title-medium fw-bold ttu">About </h4>
+                    <ul class="footer__menu__list">
+                        <li class="footer__menu__list__item">
+                            <a href="" class="footer__menu__list__link body-large fw-light">
+                                Careers 
+                            </a>
+                        </li>
+                        <li class="footer__menu__list__item">
+                            <a href="" class="footer__menu__list__link body-large fw-light">
+                                Press 
+                            </a>
+                        </li>
+                        <li class="footer__menu__list__item">
+                            <a href="" class="footer__menu__list__link body-large fw-light">
+                                Blog  
+                            </a>
+                        </li>
+                        <li class="footer__menu__list__item">
+                            <a href="" class="footer__menu__list__link body-large fw-light">
+                                Help  
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu">
+                    <h4 class="footer__menu__title title-medium fw-bold ttu">Legal </h4>
+                    <ul class="footer__menu__list">
+                        <li class="footer__menu__list__item">
+                            <a href="" class="footer__menu__list__link body-large fw-light">
+                                Privacy policy 
+                            </a>
+                        </li>
+                        <li class="footer__menu__list__item">
+                            <a href="" class="footer__menu__list__link body-large fw-light">
+                                Terms of service 
+                            </a>
+                        </li>
+                        <li class="footer__menu__list__item">
+                            <a href="" class="footer__menu__list__link body-large fw-light">
+                                Imprint 
+                            </a>
+                        </li>
+                        <li class="footer__menu__list__item">
+                            <a href="" class="footer__menu__list__link body-large fw-light">
+                                Transparency information MStV  
+                            </a>
+                        </li>
+                        <li class="footer__menu__list__item">
+                            <a href="" class="footer__menu__list__link body-large fw-light">
+                                Cookie preferences
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__social">
+                <ul class="footer__social__list flex-center g20">
+                    <li class="footer__social__list__item">
+                        <a href="" class="footer__social__list__link">
+                            <svg data-v-127adeaa="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon footer-social__icon icon icon--icon-instagram icon--size-m"><path data-v-127adeaa="" fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12zm11-5.867c-1.593 0-1.793.007-2.418.036-.625.028-1.051.127-1.424.272-.386.15-.714.35-1.04.677a2.88 2.88 0 00-.677 1.039c-.145.373-.244.8-.272 1.424-.028.626-.036.826-.036 2.42 0 1.592.007 1.792.036 2.418.029.624.127 1.05.272 1.423.15.386.35.714.677 1.04.326.326.653.527 1.039.677.373.145.8.244 1.424.272.626.029.826.036 2.419.036s1.793-.007 2.418-.036c.625-.028 1.052-.127 1.425-.272.386-.15.713-.351 1.038-.677a2.88 2.88 0 00.678-1.04c.144-.373.243-.8.272-1.423.028-.626.036-.826.036-2.419s-.008-1.793-.036-2.419c-.03-.625-.128-1.05-.272-1.424a2.88 2.88 0 00-.678-1.04 2.866 2.866 0 00-1.038-.676c-.374-.145-.8-.244-1.425-.272-.626-.029-.825-.036-2.42-.036h.003zm-.526 1.058h.527c1.566 0 1.752.005 2.37.033.572.026.883.122 1.09.202.273.107.468.234.674.44.205.204.332.4.439.674.08.206.176.517.202 1.089.028.618.034.804.034 2.37 0 1.565-.006 1.751-.034 2.37-.026.572-.122.882-.202 1.089a1.814 1.814 0 01-.44.674c-.205.205-.4.332-.674.438-.206.081-.517.176-1.089.203-.618.028-.804.034-2.37.034-1.567 0-1.753-.006-2.371-.034-.572-.027-.883-.122-1.09-.203a1.817 1.817 0 01-.674-.439 1.819 1.819 0 01-.44-.674c-.08-.206-.175-.517-.201-1.089-.028-.618-.034-.804-.034-2.37 0-1.567.006-1.752.034-2.37.026-.573.122-.883.202-1.09.106-.274.234-.47.439-.675.205-.205.4-.332.675-.439.206-.08.517-.176 1.089-.202.541-.024.75-.032 1.844-.033v.002zm3.658.974a.704.704 0 100 1.408.704.704 0 000-1.409zm-3.131.822a3.013 3.013 0 100 6.026 3.013 3.013 0 000-6.026zm0 1.057a1.956 1.956 0 110 3.912 1.956 1.956 0 010-3.912z" fill="currentColor"></path></svg>
+                        </a>
+                    </li>
+                    <li class="footer__social__list__item">
+                        <a href="" class="footer__social__list__link">
+                            <svg data-v-127adeaa="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon footer-social__icon icon icon--icon-youtube icon--size-m"><path data-v-127adeaa="" fill-rule="evenodd" clip-rule="evenodd" d="M1 12.015C1 5.932 5.858 1 11.85 1 17.843 1 22.7 5.932 22.7 12.015c0 6.084-4.857 11.015-10.85 11.015C5.858 23.03 1 18.1 1 12.015zm16.497-2.217s-.113-.827-.459-1.192c-.44-.478-.932-.48-1.158-.508-1.617-.122-4.043-.122-4.043-.122h-.005s-2.426 0-4.043.122c-.226.028-.718.03-1.158.508-.347.365-.46 1.192-.46 1.192s-.115.972-.115 1.943v.911c0 .972.116 1.944.116 1.944s.112.827.459 1.191c.44.479 1.017.464 1.274.513.925.093 3.93.121 3.93.121s2.428-.003 4.045-.125c.226-.028.719-.03 1.158-.509.346-.364.46-1.192.46-1.192s.115-.971.115-1.943v-.91c0-.972-.116-1.944-.116-1.944zm-6.856 3.958v-3.373l3.123 1.692-3.123 1.681z" fill="currentColor"></path></svg>
+                        </a>
+                    </li>
+                    <li class="footer__social__list__item">
+                        <a href="" class="footer__social__list__link">
+                            <svg data-v-127adeaa="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon footer-social__icon icon icon--icon-linkedin icon--size-m"><path data-v-127adeaa="" fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.925 23 1 18.075 1 12S5.925 1 12 1s11 4.925 11 11-4.925 11-11 11zM7.715 9.161c.757 0 1.371-.56 1.371-1.251 0-.692-.614-1.253-1.371-1.253-.758 0-1.372.56-1.372 1.253 0 .691.614 1.251 1.372 1.251zm-1.058 8.05h2.46v-7.097h-2.46v7.096zm5.914-3.947c0-.814.385-1.61 1.305-1.61.92 0 1.147.796 1.147 1.59v3.875h2.45v-4.033c0-2.803-1.657-3.286-2.676-3.286-1.019 0-1.58.344-2.226 1.179v-.955h-2.457v7.095h2.457v-3.855z" fill="currentColor"></path></svg>
+                        </a>
+                    </li>
+                    <li class="footer__social__list__item">
+                        <a href="" class="footer__social__list__link">
+                            <svg data-v-127adeaa="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon footer-social__icon icon icon--icon-tiktok icon--size-m"><path data-v-127adeaa="" fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1a11 11 0 0111 11c0 6.075-4.925 11-11 11S1 18.075 1 12zm16.582-2.913v-.473a3.115 3.115 0 01-3.102-2.828V5.5h-2.24v8.887a1.882 1.882 0 11-1.31-1.8v-2.274a4.114 4.114 0 10-.565 8.187 4.114 4.114 0 004.115-4.113v-4.54a5.32 5.32 0 003.102.992V9.087z" fill="currentColor"></path></svg>
+                        </a>
+                    </li>
+                    <li class="footer__social__list__item">
+                        <a href="" class="footer__social__list__link">
+                            <svg data-v-127adeaa="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon footer-social__icon icon icon--icon-facebook icon--size-m"><path data-v-127adeaa="" fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12zm11.78 6.101v-5.984h1.652l.219-2.063H12.78l.003-1.032c0-.538.05-.826.823-.826h1.033V6.133h-1.652c-1.985 0-2.683 1-2.683 2.683v1.238H9.067v2.063h1.237V18.1h2.476z" fill="currentColor"></path></svg>
+                        </a>
+                    </li>
+                    <li class="footer__social__list__item">
+                        <a href="" class="footer__social__list__link">
+                            <svg data-v-127adeaa="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-social__icon footer-social__icon icon icon--icon-blog icon--size-m"><path data-v-127adeaa="" fill-rule="evenodd" clip-rule="evenodd" d="M1 12.015C1 5.932 5.858 1 11.85 1 17.843 1 22.7 5.932 22.7 12.015c0 6.084-4.857 11.015-10.85 11.015C5.858 23.03 1 18.1 1 12.015zm6.637-.113c.445-.159.71-.65.71-1.125 0-.839-.65-1.368-1.768-1.368H4.147v5.136H6.73c1.156 0 1.843-.573 1.843-1.427 0-.551-.31-1.08-.936-1.216zm1.548-2.72v5.364h1.231V9.183h-1.23zm3.89 1.602c-1.163 0-2.016.823-2.016 1.926 0 1.118.853 1.934 2.016 1.934 1.156 0 2.01-.816 2.01-1.934 0-1.103-.854-1.926-2.01-1.926zm5.265.098v.181a1.81 1.81 0 00-1.005-.279c-.99 0-1.82.748-1.82 1.866 0 .99.83 1.767 1.82 1.767.408 0 .733-.098 1.005-.264v.438c0 .498-.325.755-.74.755-.454 0-.71-.211-.77-.551h-1.21c.061.951.87 1.586 1.98 1.586 1.148 0 1.963-.665 1.963-1.813v-3.686H18.34zm-11.957-.43c.49 0 .748.173.748.498 0 .333-.265.574-.748.574h-.96v-1.072h.96zm.181 3.036h-1.14v-1.035h1.163c.476 0 .74.182.74.499 0 .302-.234.536-.763.536zm6.511.136c-.521 0-.868-.385-.868-.906 0-.506.347-.907.868-.907.514 0 .861.4.861.907 0 .52-.347.906-.86.906zm4.51-.181c-.499 0-.87-.393-.87-.793 0-.53.371-.861.87-.861.264 0 .52.075.755.34v.966a.954.954 0 01-.756.348z" fill="currentColor"></path></svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="footer__social__legal">Ecosia GmbH does not assume responsibility for the content of sites to which it links and the way in which search results are displayed. To learn more please read our <a href="" class="footer__social__legal__link">privacy policy</a> and our <a href="" class="footer__social__legal__link">terms of service</a>.</p>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </div>
+    <!-- sidebar start -->
+    <div class="sidebar__overlay fixed-full flex j-end">
+        <div class="sidebar">
+            <div class="sidebar__inner width-full">
+                <div class="width-full flex-between v-center p20">
+                    <a href="index.html" class="logo">
+                        <svg data-v-127adeaa="" data-v-29356546="" width="24" height="24" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="panel-header__icon panel-header__icon icon icon--icon-logo-compact icon--size-m"><path data-v-127adeaa="" fill="#fff" fill-opacity=".01" d="M0 0h50v50H0z"></path><circle data-v-127adeaa="" cx="24" cy="24" r="24" fill="#F0F0EB"></circle><path data-v-127adeaa="" d="M35.382 7.928h-20.87v34.125h20.873V31.172h-12.96v-4.107h8.41v-4.153h-8.41v-4.103h12.96V7.928h-.003z" fill="#008009"></path></svg>
+                    </a>
+                    <button class="btn btn--close fill-btn flex-center">
+                        <svg data-v-127adeaa="" data-v-44ab4e93="" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-test-id="button-icon" aria-hidden="true" class="button__icon button__icon icon icon--icon-close icon--size-s button__icon--icon-close button__icon--size-"><path data-v-127adeaa="" d="M4.462 3.516a.668.668 0 10-.946.946L7.055 8l-3.539 3.538a.669.669 0 00.946.946L8 8.945l3.538 3.539a.669.669 0 00.946-.946L8.945 8l3.539-3.538a.668.668 0 10-.946-.946L8 7.055 4.462 3.516z" fill="currentColor"></path></svg>
+                    </button>
+                </div>
+                <div class="sidebar__item">
+                    <a href="#" class="sidebar__link display-block p20 body-large fw-normal text">Privacy</a>
+                </div>
+                <div class="sidebar__item">
+                    <a href="#" class="sidebar__link display-block p20 body-large fw-normal text">Gift trees</a>
+                </div>
+                <div class="sidebar__item">
+                    <a href="#" class="sidebar__link display-block p20 body-large fw-normal text">Blog</a>
+                </div>
+                <div class="sidebar__item">
+                    <a href="#" class="sidebar__link display-block p20 body-large fw-normal text">Careers</a>
+                </div>
+                <div class="sidebar__item">
+                    <a href="#" class="sidebar__link display-block p20 body-large fw-normal text">Help</a>
+                </div>
+                <div class="sidebar__item">
+                    <a href="#" class="sidebar__link display-block p20 border-top body-large fw-normal text">Setting</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- overlay start -->
+    <div class="hidden-overlay fixed-full"></div>
+    <!-- overlay end -->
+</body>
+</html>
+<script src="/js/app.js"></script>

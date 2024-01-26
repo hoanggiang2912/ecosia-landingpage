@@ -1,0 +1,75 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.fill-btn {
+    color: $color-button-content-secondary;
+    background: $color-button-background-secondary;
+    border-radius: 100rem;
+    border: 2px solid transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+    min-width: 40px;
+    transition: .2s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:focus {
+        border-color: $color-focused;
+    }
+}
+
+.outline-btn {
+    border: 1px solid $color-projects-link;
+    background: transparent;
+    border-radius: 100rem;
+    color: $color-projects-link;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+    min-width: 40px;
+    width: fit-content;
+    transition: .2s linear;
+
+    &:hover {
+        background: $color-button-background-transparent-hover;
+    }
+}
+
+.btn--header {
+    background: $-white;
+}
+
+.cta__btn {
+    background: $color-button-background-primary;
+    color: $color-button-content-primary;
+    border-radius: 100rem;
+    border: 2px solid transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 48px;
+    min-width: 40px;
+    transition: .2s ease-in-out;
+    width: fit-content;
+
+    &:hover {
+        background: $color-button-background-primary-hover;
+    }
+
+    &:focus {
+        border-color: $color-focused;
+    }
+}
+
+.icon-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100rem;
+}

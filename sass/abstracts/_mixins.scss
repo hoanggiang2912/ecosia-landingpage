@@ -1,0 +1,161 @@
+
+@mixin grid ($max-width , $max-height , $min-width , $min-height) {
+    grid-template-columns: repeat(auto-fit , minmax($min-width , $max-width));
+    grid-template-rows: repeat(auto-fit , minmax($min-height , $max-height));
+}
+@mixin animation($animation-name, $duration, $timing-function, $delay, $iteration-count, $direction, $fill-mode) {
+    animation: $animation-name $duration $timing-function $delay $iteration-count $direction $fill-mode;
+    -webkit-animation: $animation-name $duration $timing-function $delay $iteration-count $direction $fill-mode;
+    -moz-animation: $animation-name $duration $timing-function $delay $iteration-count $direction $fill-mode;
+    -o-animation: $animation-name $duration $timing-function $delay $iteration-count $direction $fill-mode;
+}
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
+@mixin grid-layout($num-columns, $min-width) {
+    grid-template-columns: repeat(auto-fit, minmax(min(#{$min-width}, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(22em, 100%), 1fr));
+}
+
+@mixin theme-switcher($theme) {
+    @if $theme ==light {
+        // Light theme styles
+        $color-brand-primary: #008009;
+        $color-brand-secondary: #275243;
+        $color-error: #af1731;
+        $color-success: #008009;
+        $color-disabled: #deded9;
+        $color-button-background-primary: #008009;
+        $color-button-background-primary-active: #275243;
+        $color-button-background-primary-hover: #060;
+        $color-button-background-secondary: #fff;
+        $color-button-background-secondary-active: #bebeb9;
+        $color-button-background-secondary-hover: #deded9;
+        $color-button-content-primary: #fff;
+        $color-button-content-secondary: #333;
+        $color-button-content-tertiary: #008009;
+        $color-button-border: #252525;
+        $color-button-background-transparent-hover: rgba(51, 51, 51, 0.16);
+        $color-button-background-transparent-active: rgba(51, 51, 51, 0.24);
+        $color-background-primary: #fff;
+        $color-background-secondary: #f8f8f6;
+        $color-background-tertiary: #333;
+        $color-background-quaternary: #f0f0eb;
+        $color-background-elevation-1: #fff;
+        $color-highlighter: rgba(93, 210, 94, 0.32);
+        $color-highlight-primary: rgba(93, 210, 94, 0.32);
+        $color-overlay-primary: rgba(51, 51, 51, 0.5);
+        $color-overlay-secondary: hsla(0, 0%, 100%, 0.7);
+        $color-text-primary: #333;
+        $color-text-secondary: #6c6c6c;
+        $color-text-tertiary: #fff;
+        $color-text-overline-primary: #275243;
+        $color-text-overline-secondary: #f7bc00;
+        $color-text-heading-primary: var($color-text-primary);
+        $color-text-heading-secondary: #f0f0eb;
+        $color-link-primary: #008009;
+        $color-link-secondary: #6c6c6c;
+        $color-url: #333;
+        $color-link-results-default: #004687;
+        $color-link-results-visited: #632f3c;
+        $color-decorative-icon: #6c6c6c;
+        $color-video-background: #000;
+        $color-elevation-layer-1: rgba(26, 26, 26, 0.18);
+        $color-elevation-layer-2: rgba(26, 26, 26, 0.06);
+        $color-decorative-border-1: #deded9;
+        $color-focused: #0094c7;
+        $color-form-border-default: #bebeb9;
+        $color-form-border-hover: #6c6c6c;
+        $color-form-border-primary-active: #008009;
+        $color-tripadvisor-rating: #00aa6c;
+        $color-tree-counter-tree-short-primary: var($color-brand-primary);
+        $color-tree-counter-tree-short: var($color-tree-counter-tree-short-primary);
+        $color-tree-counter-tree-tall: #a4d24f;
+        $color-hero-text: #275243;
+        $color-personal-counter-progress-background: var($color-background-quaternary);
+        $color-green-leaf-icon-color-top: #008009;
+        $color-green-leaf-icon-color-bottom: #060;
+        $color-fossil-fuel-icon-color-top: #8a5c66;
+        $color-fossil-fuel-icon-color-bottom: #632f3c;
+        $color-institutional-background-primary: #fff;
+        $color-institutional-background-secondary: #f0f0eb;
+        $color-institutional-background-tertiary: #f0f0eb;
+        $color-institutional-background-quaternary: #275243;
+
+        $color-projects-title: var($color-text-primary);
+        $color-projects-description: var($color-text-primary);
+        $color-projects-link: #333;
+        $color-financial-report-total-background: #fff;
+        $color-financial-report-total-text: #275243;
+        $color-before-after-text: #f0f0eb;
+    }
+
+    @else if $theme ==dark {
+        // Dark theme styles
+        $color-brand-primary: #5dd25e;
+        $color-brand-secondary: #668a7a;
+        $color-error: #fd4256;
+        $color-success: #5dd25e;
+        $color-disabled: #4c4c4c;
+        $color-button-background-primary: #5dd25e;
+        $color-button-background-primary-active: #afe9b0;
+        $color-button-background-primary-hover: #afe9b0;
+        $color-button-background-secondary: #1a1a1a;
+        $color-button-background-secondary-active: #6c6c6c;
+        $color-button-background-secondary-hover: #333;
+        $color-button-background-transparent-hover: rgba(222, 222, 217, 0.16);
+        $color-button-background-transparent-active: rgba(222, 222, 217, 0.32);
+        $color-button-content-primary: #1a1a1a;
+        $color-button-content-secondary: #fff;
+        $color-button-content-tertiary: #5dd25e;
+        $color-button-border: #fff;
+        $color-background-primary: #1a1a1a;
+        $color-highlighter: rgba(93, 210, 94, 0.32);
+        $color-highlight-primary: rgba(93, 210, 94, 0.32);
+        $color-background-secondary: #252525;
+        $color-background-tertiary: #252525;
+        $color-background-quaternary: #333;
+        $color-background-elevation-1: #333;
+        $color-overlay-primary: rgba(51, 51, 51, 0.5);
+        $color-overlay-secondary: hsla(0, 0%, 100%, 0.7);
+        $color-text-primary: #fff;
+        $color-text-secondary: #deded9;
+        $color-text-tertiary: #fff;
+        $color-text-overline-primary: #f7bc00;
+        $color-text-heading-primary: var($color-text-primary);
+        $color-text-heading-secondary: #fff;
+        $color-link-primary: #5dd25e;
+        $color-link-secondary: #deded9;
+        $color-url: #fff;
+        $color-link-results-default: #96d6f8;
+        $color-link-results-visited: #0094c7;
+        $color-decorative-icon: #fff;
+        $color-decorative-border-1: #4c4c4c;
+        $color-focused: #0094c7;
+        $color-form-border-default: #6c6c6c;
+        $color-form-border-hover: #bebeb9;
+        $color-form-border-primary-active: #5dd25e;
+        $color-tripadvisor-rating: #84e9bd;
+        $color-tree-counter-tree-short-primary: #003c03;
+        $color-tree-counter-tree-short: var($color-tree-counter-tree-short-primary);
+        $color-tree-counter-tree-tall: #40521f;
+        $color-hero-text: #fff;
+        $color-personal-counter-progress-background: var($color-disabled);
+        $color-green-leaf-icon-color-top: #afe9b0;
+        $color-green-leaf-icon-color-bottom: #5dd25e;
+        $color-fossil-fuel-icon-color-top: #e5dcde;
+        $color-fossil-fuel-icon-color-bottom: #cbbabe;
+        $color-institutional-background-primary: #1a1a1a;
+        $color-institutional-background-secondary: #1a1a1a;
+        $color-institutional-background-tertiary: #252525;
+        $color-institutional-background-quaternary: #252525;
+
+        $color-projects-title: #333;
+        $color-projects-description: #1a1a1a;
+        $color-financial-report-total-background: #252525;
+        $color-financial-report-total-text: #fff;
+        $color-before-after-text: #fff;
+    }
+}
