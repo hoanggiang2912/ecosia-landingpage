@@ -1241,8 +1241,8 @@ a {
   position: absolute;
   right: calc(90% + 1px);
   top: 0;
-  -webkit-mask-image: url(./assets/image/vertical-divider-wave.d1a42f3c.svg);
-  mask-image: url(./assets/image/vertical-divider-wave.d1a42f3c.svg);
+  -webkit-mask-image: url(/assets/image/vertical-divider-wave.d1a42f3c.svg);
+  mask-image: url(/assets/image/vertical-divider-wave.d1a42f3c.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: auto 100%;
