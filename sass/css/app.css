@@ -98,27 +98,27 @@ a {
   font-family: "Product Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/src/assets/fonts/pxiDypQkot1TnFhsFMOfGShVGdeOcEg.woff2") format("woff2");
+  src: url("/src./assets/fonts/pxiDypQkot1TnFhsFMOfGShVGdeOcEg.woff2") format("woff2");
   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "Product Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/src/assets/fonts/pxiDypQkot1TnFhsFMOfGShVF9eO.woff2") format("woff2");
+  src: url("/src./assets/fonts/pxiDypQkot1TnFhsFMOfGShVF9eO.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Gotham";
-  src: url("/src/assets/fonts/GothamPro.woff") format("woff");
+  src: url("/src./assets/fonts/GothamPro.woff") format("woff");
 }
 @font-face {
   font-family: "Gotham";
-  src: url("/src/assets/fonts/GothamPro-Bold.woff") format("woff");
+  src: url("/src./assets/fonts/GothamPro-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Gotham";
-  src: url("/src/assets/fonts/GothamMedium.woff") format("woff");
+  src: url("/src./assets/fonts/GothamMedium.woff") format("woff");
 }
 .display-large {
   font-size: clamp(4.4rem, 3.471rem + 2.476vw, 5.7rem) !important;
@@ -1241,8 +1241,8 @@ a {
   position: absolute;
   right: calc(90% + 1px);
   top: 0;
-  -webkit-mask-image: url(/assets/image/vertical-divider-wave.d1a42f3c.svg);
-  mask-image: url(/assets/image/vertical-divider-wave.d1a42f3c.svg);
+  -webkit-mask-image: url(./assets/image/vertical-divider-wave.d1a42f3c.svg);
+  mask-image: url(./assets/image/vertical-divider-wave.d1a42f3c.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: auto 100%;
@@ -1416,11 +1416,11 @@ a {
   overflow-x: hidden;
 }
 .light .section--forest .banner--forest {
-  background-image: url(/assets/image/forest.50330d7d.svg);
+  background-image: url(./assets/image/forest.50330d7d.svg);
   padding-bottom: 33.333%;
 }
 .light .section--forest .mask__img--wave {
-  background-image: url(/assets/image/secondary-l.4f7324ff.svg);
+  background-image: url(./assets/image/secondary-l.4f7324ff.svg);
   padding-bottom: 10%;
 }
 .light .section--project {
@@ -1499,7 +1499,7 @@ a {
   transition: 0.25s linear;
 }
 .light .section--project .project__card__wrapper .project__card .project__card__banner .mask__img {
-  mask-image: url("/assets/image/secondary-l.4f7324ff.svg");
+  mask-image: url("./assets/image/secondary-l.4f7324ff.svg");
   position: absolute;
   bottom: 0;
   left: 0;
